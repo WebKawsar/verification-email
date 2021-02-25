@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Template</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .title {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px 0;
+      }
+      .header-main {
+        background-color: #f7f7f7;
+        padding: 10px 50px 0;
+      }
+      .header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        border-radius: 2px;
+      }
+      .header-top .text {
+        margin-right: 20px;
+      }
+      .header-top .logo {
+        margin-left: 20px;
+      }
+
+      .header-top .text .free-class {
+        padding: 8px 25px;
+        border-radius: 1px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .header-content .intro {
+        text-align: center;
+        font-size: larger;
+        padding: 50px 0 70px;
+        background-color: #fafafa;
+      }
+
+      .header-content .intro h1 {
+        font-size: 55px;
+        margin: 0 0 15px;
+      }
+      .header-content .intro p {
+        font-size: 25px;
+        margin: 0;
+      }
+      .header-content .intro .first {
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      /**** Header Bottom ***/
+      .verify-email {
+        background-color: white;
+        text-align: center;
+        padding: 25px 0;
+      }
+      .verify-email h3 {
+        font-size: 25px;
+        font-family: Arial;
+        font-weight: 600;
+      }
+      .verify-email .email {
+        padding: 12px 40px;
+        border-radius: 4px;
+        border: 2px solid grey;
+        cursor: pointer;
+        background-color: #ea3737;
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+
+      /********* Content Section *********/
+      .success hr {
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        border-bottom: 3px solid black;
+      }
+      .success h2 {
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        margin: 20px 0 0;
+      }
+      .call-to-action {
+        padding: 0 0 30px;
+      }
+      .call-to-action h3 {
+        font-size: 28px;
+        text-align: center;
+      }
+
+      .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .right {
+        border-right: 3px solid grey;
+      }
+      .bottom {
+        border-bottom: 3px solid grey;
+      }
+      .col-md-6 {
+        text-align: center;
+        padding: 15px 15px;
+      }
+      .col-md-6 h4 {
+        margin: 0;
+        font-size: 25px;
+      }
+
+      /****** Footer Section ***********/
+      .social-link {
+        display: flex;
+        justify-content: center;
+      }
+      .main-menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      .main-menu ul li {
+        margin: 0 8px;
+      }
+      .main-menu ul li a {
+        background-color: #cbcbcb;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: white;
+        border-radius: 4px;
+      }
+
+      @media all and (max-width: 768px) {
+        .row {
+          grid-template-columns: 1fr;
+        }
+        .right {
+          border-right: none;
+        }
+        .bottom-none {
+          border-bottom: 3px solid grey;
+        }
+      }
+
+      @media all and (min-width: 768px) {
+        .bottom-none {
+          border-bottom: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2 class="title">Verification email</h2>
+    </header>
+    <main>
+      <section class="header-main">
+        <div class="header-top">
+          <div class="logo">
+            <img src="./custom-logo.png" alt="Logo" />
+          </div>
+          <div class="text">
+            <button class="free-class">Try free class</button>
+          </div>
+        </div>
+        <div class="header-content">
+          <div class="intro">
+            <h1>Welcome #user</h1>
+            <p class="first">We can't wait to see what you have got!</p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit
+              Quibusdam, consectetur <br />
+              error et sunt quidem nobis.
+            </p>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="verify-email">
+            <h3>Please verify your email address below:</h3>
+            <button class="email">Verify email</button>
+          </div>
+        </div>
+      </section>
+      <section class="content">
+        <div class="success">
+          <hr />
+          <h2>Success! Your email has been verified.</h2>
+          <hr />
+        </div>
+        <div class="call-to-action">
+          <h3>Where to begin:</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 bottom right">
+                <div style="font-size: 30px" class="icon">&#9998;</div>
+                <h4>Create a profile</h4>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
+                  soluta deleniti, voluptas laboriosam <br />
+                  blanditiis excepturi inventore ex nam placeat quas
+                  necessitatibus exercitationem laudantium, <br />
+                  tempore aliquam.Lorem ipsum, dolor sit amet consectetur
+                </p>
+                <a href="https://facebook.com">Read more &rArr;</a>
+              </div>
+
+              <div class="col-md-6 bottom">
+                <div style="font-size: 30px" class="icon">&#9998;</div>
+                <h4>Post your work</h4>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
+                  soluta deleniti, voluptas laboriosam <br />
+                  blanditiis excepturi inventore ex nam placeat quas
+                  necessitatibus exercitationem laudantium, <br />
+                  tempore aliquam.Lorem ipsum, dolor sit amet consectetur
+                </p>
+                <a href="https://facebook.com">Read more &rArr;</a>
+              </div>
+              <div class="col-md-6 right bottom-none">
+                <div style="font-size: 30px" class="icon">&#9998;</div>
+                <h4>Join Guilds</h4>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
+                  soluta deleniti, voluptas laboriosam <br />
+                  blanditiis excepturi inventore ex nam placeat quas
+                  necessitatibus exercitationem laudantium, <br />
+                  tempore aliquam.Lorem ipsum, dolor sit amet consectetur
+                </p>
+                <a href="https://facebook.com">Read more &rArr;</a>
+              </div>
+              <div class="col-md-6 bottom-none">
+                <div style="font-size: 30px" class="icon">&#9998;</div>
+                <h4>Follow other Users</h4>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
+                  soluta deleniti, voluptas laboriosam <br />
+                  blanditiis excepturi inventore ex nam placeat quas
+                  necessitatibus exercitationem laudantium, <br />
+                  tempore aliquam.Lorem ipsum, dolor sit amet consectetur
+                </p>
+                <a href="https://facebook.com">Read more &rArr;</a>
+              </div>
+            </div>
+          </div>
+          <button
+            style="
+              border: 3px solid black;
+              padding: 12px 30px;
+              border-radius: 4px;
+              cursor: pointer;
+              width: 150px;
+              display: block;
+              margin: 20px auto;
+            "
+          >
+            Get started &rArr;
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer style="background-color: #f7f7f7; padding: 40px 0 30px">
+      <div class="social-link">
+        <span style="margin-right: 20px; font-weight: bold">Follow us:</span>
+        <div class="main-menu">
+          <ul>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Google</a></li>
+            <li><a href="">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
