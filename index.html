@@ -149,6 +149,25 @@
       }
 
       @media all and (max-width: 768px) {
+        .header-top {
+          display: block;
+        }
+
+        .header-top .logo {
+          margin: 0;
+          text-align: center;
+        }
+        .header-top .text {
+          margin: 0;
+        }
+
+        .header-top .logo img {
+          width: 200px;
+        }
+        .header-top .text .free-class {
+          width: 100%;
+          padding: 20px 0;
+        }
         .row {
           grid-template-columns: 1fr;
         }
@@ -175,7 +194,9 @@
       <section class="header-main">
         <div class="header-top">
           <div class="logo">
-            <img src="./custom-logo.png" alt="Logo" />
+            <a href="">
+              <img src="./custom-logo.png" alt="Logo" />
+            </a>
           </div>
           <div class="text">
             <button class="free-class">Try free class</button>
